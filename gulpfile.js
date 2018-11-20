@@ -26,7 +26,7 @@ gulp.task('uglify', function() {
 gulp.task('scss', function() {
     gulp.src('source/scss/*.scss')
         .pipe(plumber())
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'uncompressed'}))
         .pipe(autoprefixer({browsers: ['last 3 versions', '> 5%', 'Firefox ESR']}))
         .pipe(gulp.dest('dist/css'));
 });

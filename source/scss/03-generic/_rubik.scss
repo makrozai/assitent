@@ -1,0 +1,126 @@
+//aqui se importa las fuentes
+$nameFont : "Rubik";
+/*
+* deben cambiar el nombre "ptsans" por el nombre de su fuente
+* considerar los formatos que se necesitan
+*/
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Light.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Light),
+    url('#{$font-path}rubik/#{$nameFont}-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-light.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Light.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-LightItalic.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Light Italic),
+    url('#{$font-path}rubik/#{$nameFont}-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-lightItalic.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-LightItalic.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-LightItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Regular.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Regular),
+    url('#{$font-path}rubik/#{$nameFont}-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-regular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Italic.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Italic),
+    url('#{$font-path}rubik/#{$nameFont}-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-Italic.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Italic.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Medium.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Medium),
+    url('#{$font-path}rubik/#{$nameFont}-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-medium.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Medium Italic),
+    url('#{$font-path}rubik/#{$nameFont}MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-MediumItalic.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}MediumItalic.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}MediumItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Bold.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Bold),
+    url('#{$font-path}rubik/#{$nameFont}-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-bold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Bold Italic),
+    url('#{$font-path}rubik/#{$nameFont}-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-BoldItalic.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-BoldItalic.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-BoldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-Black.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Black),
+    url('#{$font-path}rubik/#{$nameFont}-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-Black.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-Black.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rubik";
+  src: url('#{$font-path}rubik/#{$nameFont}-BlackItalic.eot'); /* IE9 Compat Modes */
+  src: local(#{$nameFont} Black Italic),
+    url('#{$font-path}rubik/#{$nameFont}-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //url("#{$font-path}rubik/#{$nameFont}-BlackItalic.woff2") format("woff2"), /* Super Modern Browsers */
+    url("#{$font-path}rubik/#{$nameFont}-BlackItalic.woff") format("woff"), /* Pretty Modern Browsers */
+    url('#{$font-path}rubik/#{$nameFont}-BlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('#{$font-path}rubik/#{$nameFont}-BlackItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-style: italic;
+}
